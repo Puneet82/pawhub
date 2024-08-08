@@ -1,0 +1,146 @@
+/* Services.module.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .slideIn {
+    animation: slideIn 1s ease-out;
+  }
+  
+  .fadeInDelay {
+    animation: fadeIn 1s ease-out 0.5s;
+  }
+  
+  .slideInDelay {
+    animation: slideIn 1s ease-out 0.5s;
+  }
+  
+
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .delay-700 {
+    animation-delay: 0.7s;
+  }
+
+  .delay-800 {
+    animation-delay: 0.8s;
+  }
+
+  .delay-900 {
+    animation-delay: 0.9s;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .image-effect {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .image-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto; /* Add margin to create space around the images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* html,
+body{
+    background: url('/img/services/pxfuel.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    color: white;
+} */

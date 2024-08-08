@@ -1,0 +1,41 @@
+import React from 'react';
+import Image from 'next/image';
+import DayCareImg from '../public/img/services/daycare.png';
+import DogWalkingImg from '../public/img/services/dogwalking.png';
+import DogSpaImg from '../public/img/services/dogspa.png';
+
+const OurPawsomeServices = () => {
+  return (
+    <section className="bg-gradient-to-br from-[#388697] to-[#F79D5C] p-10 text-white">
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-6">Our Pawsome Services</h1>
+        <p className="mb-8">At Pawsitivity Hub, we offer a range of services to ensure your pets are happy, healthy, and well-cared for. Explore our pawsome services below!</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center p-6 bg-[#F79D5C]/70 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div className="relative w-32 h-32 mb-4">
+              <Image src={DayCareImg} layout="fill" alt="Day Care" className="rounded-full" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Day Care</h3>
+            <p className="text-sm">Our Day Care service provides a safe and fun environment for your pets while you're away. With plenty of playtime and socialization, your pets will have a blast!</p>
+          </div>
+          <div className="flex flex-col items-center p-6 bg-[#F79D5C]/70 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div className="relative w-32 h-32 mb-4">
+              <Image src={DogWalkingImg} layout="fill" alt="Dog Walking" className="rounded-full" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Dog Walking</h3>
+            <p className="text-sm">Our Dog Walking service ensures your furry friend gets the exercise they need. Our experienced walkers will take your dog on fun and engaging walks.</p>
+          </div>
+          <div className="flex flex-col items-center p-6 bg-[#F79D5C]/70 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div className="relative w-32 h-32 mb-4">
+              <Image src={DogSpaImg} layout="fill" alt="Dog Spa" className="rounded-full" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Dog Spa</h3>
+            <p className="text-sm">Our Dog Spa service pampers your pet with luxurious grooming treatments. From baths to haircuts, your pet will leave looking and feeling fabulous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurPawsomeServices;

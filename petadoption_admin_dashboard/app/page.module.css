@@ -1,0 +1,19 @@
+.root{
+    --main:rgb(212, 143, 16);
+
+--boxshadow
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;
+    border:none;
+    transition:0.2s ease-in;
+}
+**{
+    background:var(--main);
+    color:white;
+}

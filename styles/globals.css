@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar-thumb {
+  background: #388697;
+  border-radius: 10px;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  z-index: 19;
+}
+::-webkit-scrollbar-track {
+  background: #ebe3cc; /* Example background to contrast the scrollbar */
+}
+
+/* pages/_app.js (global.css) */
+
+.pageBody {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://th.bing.com/th/id/OIP.gT1fCzmebtm4C7DvqKqMHAHaHa?pid=ImgDet&w=179&h=179&c=7&dpr=1.3");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  /* cursor: none !important; */
+  cursor: url(https://cdn.custom-cursor.com/db/4761/32/arrow2714.png), pointer !important;
+  /* cursor: url('/img/cursor.png') !important; */
+}
+a {
+  cursor: url(https://cdn.custom-cursor.com/db/4762/32/arrow2714.png), default !important;
+}
+button {
+  cursor: url(https://cdn.custom-cursor.com/db/4762/32/arrow2714.png), default !important;
+}
+label,
+select,
+option {
+  cursor: url(https://cdn.custom-cursor.com/db/4762/32/arrow2714.png), default !important;
+}
+.cursor-custom {
+  cursor: url(https://cdn.custom-cursor.com/db/4762/32/arrow2714.png), default !important;
+}
+
+@layer base {
+  body {
+    @apply font-primary text-primary text-2xl;
+  }
+  .h2 {
+    @apply text-[46px] font-medium leading-tight;
+  }
+  .btn {
+    @apply h-[62px] flex justify-center items-center py-3 px-8 rounded-full text-[20px] transition-all;
+  }
+  .btn-outline {
+    @apply bg-transparent border-2 hover:bg-transparent;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-hover;
+  }
+  .btn-orange {
+    @apply bg-orange text-white hover:bg-orange-hover;
+  }
+  .serviceSlider .swiper-button-prev,
+  .serviceSlider .swiper-button-next {
+    @apply bg-primary cursor-custom opacity-80 text-white top-[95%] w-[123px] h-[46px] rounded-[50%] z-20;
+  }
+  .serviceSlider .swiper-button-prev {
+    @apply bg-[#F79D5C] left-[23%] md:left-[35%] lg:left-[40%];
+  }
+  .serviceSlider .swiper-button-next {
+    @apply right-[23%] md:right-[35%] lg:right-[40%];
+  }
+  .serviceSlider .swiper-button-prev:after,
+  .serviceSlider .swiper-button-next:after {
+    @apply text-lg;
+  }
+  .book-us {
+    max-width: 32rem;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .text-paw-blue {
+    color: #007bff;
+  }
+
+  .bg-paw-blue {
+    background-color: #007bff;
+  }
+
+  .hover\:bg-paw-dark-blue:hover {
+    background-color: #0056b3;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: white;
+    color: #374151;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+
+  .text-red-600 {
+    color: #e3342f;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .p-3 {
+    padding: 0.75rem;
+  }
+
+  .p-8 {
+    padding: 2rem;
+  }
+
+  .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .rounded {
+    border-radius: 0.375rem;
+  }
+
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .font-medium {
+    font-weight: 500;
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  .bg-white {
+    background-color: white;
+  }
+}
+
+.input.input-bordered {
+  background-color: white !important;
+}
+
+.flare {
+  position: fixed;
+  /* border: 2px solid #ffffff2b; */
+  /* border-radius: 50%; */
+  /* background-image: url('/img/cursor.png'); */
+  object-fit: cover;
+  /* height: 500px; */
+  /* width: 500px; */
+  /* mix-blend-mode: screen; */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transform: rotate(-20deg);
+  z-index: 999999 !important ;
+  /* backdrop-filter: blur(1px); */
+  /* background-color: #0000005e; */
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  cursor: none !important; /* Let's hide the default cursor so it looks way better */
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+}
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Custom fade effect for Swiper slides */
+
+body {
+  background: url("/img/services/pxfuel1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  /* font-family: Arial, sans-serif; */
+  height: 100%;
+  width: 100%;
+  /* color: white; */
+}

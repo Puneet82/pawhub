@@ -1,0 +1,98 @@
+.container {
+  background-color: #d6edf4;
+  padding: 20px;
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+.btn {
+  background-color: #388697;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.petCard {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.petCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.petCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.petInfo {
+  padding: 15px;
+}
+
+.petInfoTitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.petInfoText {
+  color: #666;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actionButton {
+  background-color: white;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+  padding: 10px 22px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.deleteButton {
+  /* background-color: #FF4B5C; */
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: white;
+  color: #ff4b5c;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #d43444;
+  color: white;
+}

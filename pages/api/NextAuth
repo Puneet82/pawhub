@@ -1,0 +1,33 @@
+// pages/api/auth/[...nextauth].js
+import NextAuth from "next-auth";
+import Providers from "next-auth/providers";
+
+export default NextAuth({
+  providers: [
+    Providers.Credentials({
+      // Customize your credentials provider logic
+      async authorize(credentials) {
+        // Here you should add your own logic to check the credentials
+        // and return user object or null
+        const user = { id: 1, name: 'Admin User', email: 'admin@example.com' }; // Dummy user
+
+        if (credentials.email === 'admin@example.com' && credentials.password === 'password') {
+          return user;
+        }
+        return null;
+      }
+    })
+  ],
+  callbacks: {
+    async session(session, user) {
+      session.user = user;
+      return session;
+    },
+    async jwt(token, user) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    }
+  }
+});
