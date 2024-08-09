@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import dogImage from "../public/img/newsLetter/dog.png";
+import dogImage from "../public/img/newsletter/dog.png";
 import { message } from "../helpers/Message";
 import Message from "./Message";
 import API from "../api_endpoints";
