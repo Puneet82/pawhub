@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import util from "../../util/index.js";
+import util from "../util/index.js";
 import { STATUS } from "../constants/statuses.js";
 import model from "./index.js";
 
