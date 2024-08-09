@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import DogImg from "../public/img/NewsLetter/dog.png";
+import dogImage from "../public/img/NewsLetter/dog.png";
 import { message } from "../helpers/Message";
 import Message from "./Message";
 import API from "../api_endpoints";
@@ -60,7 +60,7 @@ const NewsLetter = () => {
         </div>
         <div className="flex-1 flex justify-center items-end">
           <div className="w-60 h-60 lg:w-96 lg:h-96 relative">
-            <Image src={DogImg} alt="Dog" layout="fill" objectFit="contain" />
+            <Image src={dogImage} alt="Dog" layout="fill" objectFit="contain" />
           </div>
         </div>
       </div>
